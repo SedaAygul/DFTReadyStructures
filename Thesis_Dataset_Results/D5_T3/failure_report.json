@@ -1,0 +1,6 @@
+{
+    "run": "D5_T3",
+    "stage": "Core Generation",
+    "error": "Core too small",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Seda\\Documents\\Masa\u00fcst\u00fc\\Atomic_Design\\LATEST_DESIGN\\pipeline_v32.py\", line 604, in run\n    if len(core) < 10: raise ValueError(\"Core too small\")\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Core too small\n"
+}

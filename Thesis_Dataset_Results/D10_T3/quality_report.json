@@ -1,0 +1,16 @@
+{
+    "name": "D10_T3",
+    "n_atoms": 334,
+    "n_Au": 282,
+    "n_Fe": 15,
+    "n_Rh": 5,
+    "n_O": 32,
+    "ratio_Metal_O": 0.625,
+    "min_dist_Au_Au": 2.6313,
+    "min_dist_Metal_O": 1.8624,
+    "min_dist_O_O": 2.4494,
+    "min_dist_Au_Metal": 2.5512,
+    "min_dist_Au_O": 2.0793,
+    "min_dist_global": 1.8624,
+    "Au_connectivity": 1.0
+}

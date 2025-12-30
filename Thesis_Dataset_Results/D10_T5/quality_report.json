@@ -1,0 +1,16 @@
+{
+    "name": "D10_T5",
+    "n_atoms": 568,
+    "n_Au": 516,
+    "n_Fe": 15,
+    "n_Rh": 5,
+    "n_O": 32,
+    "ratio_Metal_O": 0.625,
+    "min_dist_Au_Au": 2.6629,
+    "min_dist_Metal_O": 1.895,
+    "min_dist_O_O": 2.5202,
+    "min_dist_Au_Metal": 2.5749,
+    "min_dist_Au_O": 2.0994,
+    "min_dist_global": 1.895,
+    "Au_connectivity": 1.0
+}

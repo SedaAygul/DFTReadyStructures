@@ -1,0 +1,7 @@
+{
+    "has_Rh_core": true,
+    "has_Rh_merged": true,
+    "unexpected_Rh_in_shell": false,
+    "surrogate_active_during_relax": true,
+    "surrogate_details": "Rh->Fe during CHGNet"
+}

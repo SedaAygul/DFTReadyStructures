@@ -1,0 +1,52 @@
+{
+    "base_dir": "/content/drive/MyDrive/Thesis_Run/Results_Pro",
+    "bulk_path": "/content/drive/MyDrive/ESTU_YU_Project/Bulk/AB2O4_4x4x4.xyz",
+    "diameters": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0
+    ],
+    "thicknesses": [
+        2.0
+    ],
+    "gap_size": 2.3,
+    "wulff_buffer": 3.0,
+    "max_shell_atoms_est": 300000,
+    "max_shell_atoms_real": 200000,
+    "min_oxygen_neighbors": 3,
+    "fe_o_cutoff": 2.4,
+    "max_removal_fraction": 0.2,
+    "safe_dist_au_o": 1.9,
+    "safe_dist_au_fe": 2.3,
+    "qc_min_dist_global": 1.2,
+    "qc_cutoffs": {
+        "Au-Au": 2.5,
+        "Metal-O": 1.6,
+        "O-O": 2.0,
+        "Au-Metal": 2.0,
+        "Au-O": 1.8
+    },
+    "min_shell_connectivity": 0.95,
+    "connectivity_cutoff": 3.2,
+    "anneal_temp": 500.0,
+    "anneal_steps": 5000,
+    "timestep_fs": 1.0,
+    "freeze_buffer": 5.0,
+    "surf_energies": [
+        1.0,
+        1.14,
+        1.25
+    ],
+    "lattice_au": 4.08,
+    "seed": 2025,
+    "_versions": {
+        "ase": "3.26.0",
+        "torch": "2.9.0+cu126",
+        "chgnet": "0.4.2",
+        "python": "3.12.12 (main, Oct 10 2025, 08:52:57) [GCC 11.4.0]"
+    }
+}

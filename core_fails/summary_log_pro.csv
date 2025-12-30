@@ -1,0 +1,7 @@
+Diameter,Thickness,Status,Time,Error
+1.0,2.0,Run_Failed,0.0,ABORT: Core Too Small (Raw Cut has 0 atoms). Increase Diameter.
+2.0,2.0,Run_Failed,0.0,ABORT: Core Too Small (Raw Cut has 0 atoms). Increase Diameter.
+3.0,2.0,Run_Failed,0.0,ABORT: Core Too Small (Raw Cut has 1 atoms). Increase Diameter.
+4.0,2.0,Run_Failed,0.0,ABORT: Core Too Small (Raw Cut has 4 atoms). Increase Diameter.
+5.0,2.0,Run_Failed,0.0,ABORT: Core Too Small (Raw Cut has 4 atoms). Increase Diameter.
+6.0,2.0,Run_Failed,0.0,ABORT: Core Too Small (Raw Cut has 9 atoms). Increase Diameter.

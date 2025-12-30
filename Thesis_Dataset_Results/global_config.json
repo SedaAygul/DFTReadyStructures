@@ -1,0 +1,54 @@
+{
+    "base_dir": "C:\\Users\\Seda\\Documents\\Masa\u00fcst\u00fc\\Atomic_Design\\LATEST_DESIGN\\Thesis_Dataset_Results",
+    "bulk_path": "C:\\Users\\Seda\\Documents\\Masa\u00fcst\u00fc\\Atomic_Design\\LATEST_DESIGN\\AB2O4_4x4x4.xyz",
+    "diameters": [
+        35.0
+    ],
+    "thicknesses": [
+        1.0,
+        2.0
+    ],
+    "gap_size": 2.3,
+    "wulff_buffer": 3.0,
+    "max_shell_atoms_est": 300000,
+    "max_shell_atoms_real": 200000,
+    "min_oxygen_neighbors": 3,
+    "fe_o_cutoff": 2.4,
+    "max_removal_fraction": 0.2,
+    "safe_dist_au_o": 1.9,
+    "safe_dist_au_fe": 2.3,
+    "qc_min_dist_global": 1.2,
+    "qc_cutoffs": {
+        "Au-Au": 2.5,
+        "Metal-O": 1.6,
+        "O-O": 2.0,
+        "Au-Metal": 2.0,
+        "Au-O": 1.8
+    },
+    "min_shell_connectivity": 0.95,
+    "connectivity_cutoff": 3.2,
+    "anneal_temp": 500.0,
+    "anneal_steps": 5000,
+    "timestep_fs": 1.0,
+    "freeze_buffer": 5.0,
+    "surf_energies": [
+        1.0,
+        1.14,
+        1.25
+    ],
+    "lattice_au": 4.08,
+    "seed": 2025,
+    "_versions": {
+        "ase": "3.26.0",
+        "torch": "2.7.0.dev20250310+cu124",
+        "chgnet": "0.4.2",
+        "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]"
+    },
+    "_methodology": {
+        "alignment": "Always-Centered (Origin)",
+        "sampling": "Emergency Brake (No Random Deletion)",
+        "connectivity": "Symmetrized Graph Validation (>95%)",
+        "equilibration": "Maxwell-Boltzmann + 5ps Anneal-Assisted Relaxation",
+        "integrity": "Mass Conservation Checks + Stage Tracking"
+    }
+}
