@@ -475,7 +475,9 @@ need to provide them.
 
 1. **Workflow schematic**
    
-<img width="4400" height="2475" alt="Picture1" src="https://github.com/user-attachments/assets/5edff7aa-0577-4393-bdf7-5ea1aa7effa8" />
+<img width="4315" height="2286" alt="Picture8" src="https://github.com/user-attachments/assets/e9a3e31c-46ac-464a-a7ab-fec4b42576c5" />
+
+
 2. **Evolution of core stability with increasing diameter. (a) D=5.0 Å (b) D=6.0 Å (c) D=7.0 Å **
 
    <img width="1248" height="415" alt="Picture2" src="https://github.com/user-attachments/assets/a2c5b19e-a593-418a-b178-c7eb2984871e" />
