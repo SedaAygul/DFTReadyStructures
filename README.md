@@ -467,45 +467,30 @@ A typical layout for the public release:
 
 ---
 
-## Suggested Figures / Screenshots
+## Figures / Screenshots
 
 To make the README and the GitHub landing page more readable, the
 following images would help. None of these are auto-generated; you would
 need to provide them.
 
-1. **Workflow schematic** (`docs/workflow.png`) — a clean diagram of the
-   six pipeline stages (core cut → cleaning → Wulff → hole/clash filter →
-   merge → relaxation → QC). Can be drawn in PowerPoint, Inkscape or
-   diagrams.net.
-2. **Rendered final CSNP** (`docs/csnp_render.png`) — an OVITO or VMD
-   rendering of `08_final_relaxed.xyz` for a representative (D, T) run,
-   ideally with the Au shell shown semi-transparently so the spinel core
-   is visible. This is the natural "hero image" at the top of the README.
-3. **Stage comparison strip** (`docs/stages.png`) — three small renders
-   (core only / merged pre-relax / final relaxed) side by side.
-4. **Example histogram** (`docs/hist_example.png`) — one of the
-   `hist_*.png` images already produced by the pipeline (e.g. Au–Au
-   nearest-neighbour distance) to show what users will see in their own
-   run folders.
-5. **Optional ToC graphic** — the abstract / ToC figure from the
-   manuscript, once finalised.
+1. **Workflow schematic**
+   
+<img width="4400" height="2475" alt="Picture1" src="https://github.com/user-attachments/assets/5edff7aa-0577-4393-bdf7-5ea1aa7effa8" />
+2. **Evolution of core stability with increasing diameter. (a) D=5.0 Å (b) D=6.0 Å (c) D=7.0 Å **
 
-If you can supply (1) and (2), I can wire them into the README at the top
-(hero image) and right after *Pipeline Overview* (workflow). The rest are
-"nice to have" but not essential for a first release.
+   <img width="1248" height="415" alt="Picture2" src="https://github.com/user-attachments/assets/a2c5b19e-a593-418a-b178-c7eb2984871e" />
 
----
+3. Geometric percolation threshold of the Au shell for D=35 Å. (a) T = 0.05 Å, connectivity ≈6.4% (b) T = 0.5 Å, connectivity ≈6.3% (c) T = 0.8 Å, connectivity= 100% (d) T = 1.0 Å, connectivity=100%
 
-## License
+<img width="1316" height="352" alt="Picture4" src="https://github.com/user-attachments/assets/0d5b7596-a721-420f-b247-6e2c57083c69" />
 
-Released under the **MIT License** (see `LICENSE`).
-You are free to use, modify and redistribute the code, provided the
-copyright notice is retained and the manuscript is cited in any resulting
-publication.
+4.Energy evaluations throughout the relaxations
 
-> *If you prefer a different license (Apache-2.0, BSD-3-Clause, GPL-3.0,
-> CC-BY-4.0 for documentation, etc.), update both this section and the
-> `LICENSE` file accordingly.*
+<img width="768" height="405" alt="Picture5" src="https://github.com/user-attachments/assets/cb3d0f01-efd2-49a3-a05b-b311d2c9caa9" />
+
+5.Nearest Neighbors distances for a) Au-O b) Au-Fe
+
+<img width="1333" height="496" alt="Picture7" src="https://github.com/user-attachments/assets/771c1549-f44c-45ef-92d7-ea99ab17940f" />
 
 ---
 
@@ -515,7 +500,7 @@ publication.
   ✉ `sedaaygul99@gmail.com`
 
 For bug reports and feature requests, please open a GitHub *Issue* rather
-than emailing — it keeps the discussion searchable for other users.
+than emailing , it keeps the discussion searchable for other users.
 
 ---
 
