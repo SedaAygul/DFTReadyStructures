@@ -469,28 +469,26 @@ A typical layout for the public release:
 
 ## Figures / Screenshots
 
-To make the README and the GitHub landing page more readable, the
-following images would help. None of these are auto-generated; you would
-need to provide them.
+The workflow of the code is shared in 1. Workflow Schematic for better understanding. The following graphs are generated form these pipeline as examples. 
 
 1. **Workflow schematic**
    
 <img width="4315" height="2286" alt="Picture8" src="https://github.com/user-attachments/assets/e9a3e31c-46ac-464a-a7ab-fec4b42576c5" />
 
 
-2. **Evolution of core stability with increasing diameter. (a) D=5.0 Å (b) D=6.0 Å (c) D=7.0 Å **
+2. **Example 1: Evolution of core stability with increasing diameter. (a) D=5.0 Å (b) D=6.0 Å (c) D=7.0 Å**
 
    <img width="1248" height="415" alt="Picture2" src="https://github.com/user-attachments/assets/a2c5b19e-a593-418a-b178-c7eb2984871e" />
 
-3. Geometric percolation threshold of the Au shell for D=35 Å. (a) T = 0.05 Å, connectivity ≈6.4% (b) T = 0.5 Å, connectivity ≈6.3% (c) T = 0.8 Å, connectivity= 100% (d) T = 1.0 Å, connectivity=100%
+3. **Example 2: Geometric percolation threshold of the Au shell for D=35 Å. (a) T = 0.05 Å, connectivity ≈6.4% (b) T = 0.5 Å, connectivity ≈6.3% (c) T = 0.8 Å, connectivity= 100% (d) T = 1.0 Å, connectivity=100%**
 
 <img width="1316" height="352" alt="Picture4" src="https://github.com/user-attachments/assets/0d5b7596-a721-420f-b247-6e2c57083c69" />
 
-4.Energy evaluations throughout the relaxations
+4.**Example 3: Energy evaluations throughout the relaxations**
 
 <img width="768" height="405" alt="Picture5" src="https://github.com/user-attachments/assets/cb3d0f01-efd2-49a3-a05b-b311d2c9caa9" />
 
-5.Nearest Neighbors distances for a) Au-O b) Au-Fe
+5.**Example 4: Nearest Neighbors distances for a) Au-O b) Au-Fe**
 
 <img width="1333" height="496" alt="Picture7" src="https://github.com/user-attachments/assets/771c1549-f44c-45ef-92d7-ea99ab17940f" />
 
