@@ -7,10 +7,10 @@ magnetite-core / gold-shell core–shell nanoparticles (CSNPs) using the
 This repository contains the code (`pipeline_v32.py`) accompanying the
 manuscript:
 
-> **[Manuscript title placeholder — to be completed upon acceptance].**
+> **[Manuscript title placeholder - to be completed upon acceptance].**
 > *Authors:* Seda Aygül Akyüz, Zeliha Cansu Canbek Özdil
-> *Journal:* ACS Engineering Au, *under review.*
-> *DOI:* `10.xxxx/xxxxxxx` *(to be inserted upon publication).*
+> *Journal:* ACS Engineering Au
+> *DOI:* `[10.xxxx/xxxxxxx` *(to be inserted upon publication).](https://doi.org/10.1021/acsengineeringau.6c00010)*
 
 ---
 
@@ -41,8 +41,8 @@ manuscript:
 ## Why This Project
 
 Atomistic models of bimetallic core–shell nanoparticles are usually built
-either by ad-hoc geometric overlap of two crystals — which produces
-unphysical interfaces — or by full *ab initio* relaxation, which is
+either by ad-hoc geometric overlap of two crystals - which produces
+unphysical interfaces - or by full *ab initio* relaxation, which is
 computationally prohibitive beyond a few hundred atoms.
 This pipeline targets the regime in between: **realistic
 nanometre-scale Fe₃O₄@Au CSNPs (10³–10⁵ atoms)** that are:
@@ -54,10 +54,6 @@ nanometre-scale Fe₃O₄@Au CSNPs (10³–10⁵ atoms)** that are:
   (CHGNet), and
 - fully auditable through stage-by-stage XYZ snapshots and a battery of
   quantitative quality-control gates.
-
-The output structures are suitable as starting geometries for downstream
-electrodynamic (e.g. COMSOL EWFD) or thermal-transport simulations, or as
-inputs for further DFT refinement on smaller motifs.
 
 ---
 
@@ -98,10 +94,10 @@ executes the following stages:
 | B2 | **Hole + clash filtering** | A spherical cavity (`hole_radius = core_radius + gap_size`) is carved out, then a two-tree (Au–O / Au–Fe) safety filter removes any shell atom too close to a core atom. Connectivity ≥ 95 % is enforced. | `04_shell_filtered.xyz` |
 | C  | **Merge** | Core and shell are concatenated. | `05_merged_prerelax.xyz` |
 | D1 | **Hybrid freeze** | Inner core atoms within `core_r_max − freeze_buffer` are frozen via `FixAtoms`; surface and Au atoms remain mobile. |  |
-| D2 | **Phase I — FIRE** | 50 steps of FIRE relaxation (`fmax = 2.0`) to declash. | `06_after_fire.xyz` |
-| D3 | **Phase II — Langevin anneal** | 5 ps Langevin MD at 500 K (default), `friction = 0.02`, 1 fs timestep, with Maxwell–Boltzmann initialisation. | `07_after_md.xyz` |
-| D4 | **Phase IIb — Cooling** | 0.5 ps Langevin cooling at 10 K. |  |
-| D5 | **Phase III — BFGS** | Final BFGS relaxation to `fmax = 0.1` eV/Å. | `08_final_relaxed.xyz` |
+| D2 | **Phase I - FIRE** | 50 steps of FIRE relaxation (`fmax = 2.0`) to declash. | `06_after_fire.xyz` |
+| D3 | **Phase II - Langevin anneal** | 5 ps Langevin MD at 500 K (default), `friction = 0.02`, 1 fs timestep, with Maxwell–Boltzmann initialisation. | `07_after_md.xyz` |
+| D4 | **Phase IIb - Cooling** | 0.5 ps Langevin cooling at 10 K. |  |
+| D5 | **Phase III - BFGS** | Final BFGS relaxation to `fmax = 0.1` eV/Å. | `08_final_relaxed.xyz` |
 | E  | **QC and reporting** | Element-resolved minimum-distance gates, connectivity, mass-conservation, NaN watchdog, distance-distribution histograms, energy/force snapshot. | `quality_report.json`, `hist_*.png` |
 
 Each (D, T) run produces its own subfolder
@@ -157,7 +153,7 @@ will be downloaded automatically into the CHGNet cache directory.
 
 ## Quick Start
 
-A minimal end-to-end run — single core diameter, two shell thicknesses —
+A minimal end-to-end run - single core diameter, two shell thicknesses -
 using the defaults at the bottom of `pipeline_v32.py`:
 
 ```bash
@@ -213,7 +209,7 @@ bulk_path: str = r"C:\Users\<you>\...\AB2O4_4x4x4.xyz"
 All adjustable parameters live in `SimulationConfig` (≈ lines 56–131).
 Below they are grouped by intent.
 
-### Geometry — what gets built
+### Geometry - what gets built
 
 | Parameter | Default | Meaning |
 |---|---|---|
@@ -258,7 +254,7 @@ Below they are grouped by intent.
 | Parameter | Default | Meaning |
 |---|---|---|
 | `anneal_temp`    | `500.0` K | Langevin temperature during Phase II. |
-| `anneal_steps`   | `5000`    | Number of MD steps (×`timestep_fs` fs) — default is 5 ps. |
+| `anneal_steps`   | `5000`    | Number of MD steps (×`timestep_fs` fs) - default is 5 ps. |
 | `timestep_fs`    | `1.0` fs | MD timestep. |
 | `freeze_buffer`  | `5.0` Å  | Width of the *unfrozen* outer shell of the core (atoms within `core_r_max − freeze_buffer` are frozen). |
 
@@ -290,7 +286,7 @@ containing:
 05_merged_prerelax.xyz    # core + shell, pre-relaxation
 06_after_fire.xyz         # after Phase I (FIRE)
 07_after_md.xyz           # after Phase II (Langevin anneal)
-08_final_relaxed.xyz      # final structure after BFGS — the deliverable
+08_final_relaxed.xyz      # final structure after BFGS - the deliverable
 fire.log                  # FIRE optimiser log
 bfgs.log                  # BFGS optimiser log
 quality_report.json       # all QC metrics + final energy / fmax
@@ -496,7 +492,7 @@ The workflow of the code is shared in 1. Workflow Schematic for better understan
 
 ## Contact
 
-- **Seda Aygül Akyüz** — *corresponding author for code questions*
+- **Seda Aygül Akyüz** - *corresponding author for code questions*
   ✉ `sedaaygul99@gmail.com`
 
 For bug reports and feature requests, please open a GitHub *Issue* rather
@@ -508,12 +504,11 @@ than emailing , it keeps the discussion searchable for other users.
 
 This work uses:
 
-- **CHGNet** — Deng, B. *et al.* *Nat. Mach. Intell.* **5**, 1031–1041
+- **CHGNet** - Deng, B. *et al.* *Nat. Mach. Intell.* **5**, 1031–1041
   (2023).
-- **ASE** — Larsen, A. H. *et al.* *J. Phys.: Condens. Matter* **29**,
+- **ASE** - Larsen, A. H. *et al.* *J. Phys.: Condens. Matter* **29**,
   273002 (2017).
-- **The Materials Project** — Jain, A. *et al.* *APL Materials* **1**,
-  011002 (2013).
+- Financial support for this study was provided by the Scientific and Technological Research Council of Turkey (TÜBİTAK) under contract number 23AG002.
 
 Computational resources and supervision are gratefully acknowledged in the
 manuscript itself.
