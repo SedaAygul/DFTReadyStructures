@@ -10,7 +10,7 @@ manuscript:
 > **[Manuscript title placeholder - to be completed upon acceptance].**
 > *Authors:* Seda Aygül Akyüz, Zeliha Cansu Canbek Özdil
 > *Journal:* ACS Engineering Au
-> *DOI:* `[10.xxxx/xxxxxxx` *(to be inserted upon publication).](https://doi.org/10.1021/acsengineeringau.6c00010)*
+> *DOI:*(https://doi.org/10.1021/acsengineeringau.6c00010)*
 
 ---
 
