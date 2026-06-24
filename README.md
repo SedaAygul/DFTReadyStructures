@@ -493,7 +493,6 @@ The workflow of the code is shared in 1. Workflow Schematic for better understan
 ## Contact
 
 - **Seda Aygül Akyüz** - *corresponding author for code questions*
-  ✉ `sedaaygul99@gmail.com`
 
 For bug reports and feature requests, please open a GitHub *Issue* rather
 than emailing , it keeps the discussion searchable for other users.
